@@ -74,16 +74,8 @@ var list = {
 		handler : Comandos.sendPokemon ,
 		descripcion : "Lanza una fusion random de pokemones"
 	} ,
-	/*
-	 "@hernanOn" : {
-	 handler : Comandos.switchHernan(true) ,
-	 descripcion : "Enciende subnormales"
-	 } ,
-	 "@hernanOff" : {
-	 handler : Comandos.switchHernan(false) ,
-	 descripcion : "Apaga subnormales"
-	 } ,
-	 */
+
+
 	"@sacrificio" : {
 		handler : Comandos.sacrificar ,
 		descripcion : "Sacrifica un marico para invocar otra vaina"
