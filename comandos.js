@@ -172,27 +172,6 @@ comandos.sendPokemon = function (apiInstance , message , cb) {
 	});
 };
 
-comandos.switchHernan = function (on) {
-	var id = '100002355213148';
-	return function (apiInstance , message , cb) {
-		if ( on ) {
-			apiInstance.addUserToGroup(id , message.threadID , function (err) {
-				if ( err ) {
-					console.error(err);
-				}
-				return cb(null , null);
-			});
-		} else {
-			apiInstance.removeUserFromGroup(id , message.threadID , function (err) {
-				if ( err ) {
-					console.error(err);
-				}
-				return cb(null , null);
-			});
-		}
-	}
-};
-
 
 var sacrificioInProcess = false;
 var idSacrificado       = null;
